@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int input, integer, factorial = 1;
+	cout << "Input an integer:";
+	cin >> input;
+	
+	integer = input;
+	while(integer > 1)
+	{
+		factorial *=integer;
+		integer --;
+	};
+	cout << "The factorial of number " << input << " is " << factorial << endl;
+}
