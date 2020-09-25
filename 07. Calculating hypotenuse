@@ -1,0 +1,20 @@
+# include <iostream>
+# include <cmath>
+
+using namespace std;
+
+int main(void)
+{
+	int first, second;
+	double c, multiplication;
+	
+	cout << "Input first triangle leg:";
+	cin >> first;
+	
+	cout << "Input second triangle leg:";
+	cin >> second;
+	
+	multiplication=(first*first)+(second*second);
+	c = sqrt(multiplication);
+	cout << "Hypotenuse length: " << c << endl;
+}
