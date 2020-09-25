@@ -1,0 +1,30 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+class AskAndPrint
+{
+    string cs;
+  public:
+    void DoYourThing(char cs[]);
+};
+
+void AskAndPrint::DoYourThing(char cs[])
+{
+   char cstring[50+1];
+   cout << cs;
+   cin.get(cstring, 50);
+   cout << cstring << endl;
+}
+
+int main (void)
+{  
+
+   char charstring[] = "Write the text for printing:";
+
+   AskAndPrint thing;
+
+   thing.DoYourThing(charstring);
+
+}
