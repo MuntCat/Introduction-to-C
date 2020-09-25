@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Calculator
+{
+  public:
+
+  int Sum(int first, int second);
+};
+
+int Calculator::Sum(int first, int second)
+{
+  int sum =first + second;
+  return sum;
+}
+class Printer
+{
+   int a, b, c;
+ public:
+   void Print();
+};
+
+void Printer::Print()
+{
+   int a, b, c;
+
+   cout << "Give a first integer: ";
+   cin >> a;
+   cout << "Give a second integer: ";
+   cin >> b;
+   Calculator object;
+   c = object.Sum(a, b);
+   cout << "Sum: " << c << endl;
+}
+int main()
+{  
+  Printer object;
+  object.Print();
+} 
